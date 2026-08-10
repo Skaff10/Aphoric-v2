@@ -1,7 +1,9 @@
+import PixelImage from "@/components/PixelImage";
 import ScrollWordReveal from "@/components/ScrollWordReveal";
 import WorkGrid from "@/components/WorkGrid";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const page = () => {
   const selected_project = [
@@ -39,9 +41,13 @@ const page = () => {
           {selected_project.map((project, i) => (
             <Link key={project.slug} href={`/work/${project.slug}`}>
               <div className="overflow-hidden rounded-xl">
-                <img
+                <PixelImage
                   src={project.cover}
                   alt={project.title}
+                  width={800}
+                  height={500}
+                  startPixelSize={60}
+                  duration={3000}
                   className="w-full h-full object-cover aspect-16/10 transition-transform duration-500 hover:scale-105"
                 />
               </div>
@@ -61,6 +67,28 @@ const page = () => {
           brightColor="#"
           dimColor="#38383d"
         />
+      </section>
+
+      <section className="mt-30 w-full ">
+        <div className="flex justify-center w-full gap-10  max-w-430 md:pl-62 mb-100">
+          <div className="w-1000 rounded-xl overflow-hidden">
+           <img src="/logo/aph-logo-w.svg" alt="aphoric" />
+          </div>
+
+          <div className="flex flex-col gap-4 justify-center items-start">
+            <span className="text-text text-xl  tracking-wide">
+              why work with us
+            </span>
+            <p className="text-2xl md:text-5xl leading-snug  text-secondary">
+              We believe the best brands come from{" "}
+              <span className="text-blue-600">true collaboration</span>. when we
+              work together, you're not just getting a designer, you're getting
+              a <span className="text-blue">strategic partner</span> who takes
+              time to understand your business, your customers, and your goals.
+            </p>
+            <Link href={'/contact'}  className="bg-secondary font-semibold text-primary p-4 rounded-lg px-10 mt-8">start a project</Link>
+          </div>
+        </div>
       </section>
     </main>
   );
