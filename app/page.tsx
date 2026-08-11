@@ -70,8 +70,8 @@ const page = () => {
       </section>
 
       <section className="mt-30 w-full ">
-        <div className="flex justify-center w-full gap-10  max-w-430 md:pl-62 mb-100">
-          <div className="w-1000 rounded-xl overflow-hidden">
+        <div className="flex justify-start w-full gap-10  md:pl-62 mb-40">
+          <div className="w-100 rounded-xl overflow-hidden">
            <img src="/logo/aph-logo-w.svg" alt="aphoric" />
           </div>
 
@@ -79,10 +79,10 @@ const page = () => {
             <span className="text-text text-xl  tracking-wide">
               why work with us
             </span>
-            <p className="text-2xl md:text-5xl leading-snug  text-secondary">
-              We believe the best brands come from{" "}
+            <p className="text-2xl md:text-4xl  max-w-300 leading-snug  text-secondary">
+              we believe the best brands come from{" "}
               <span className="text-blue-600">true collaboration</span>. when we
-              work together, you're not just getting a designer, you're getting
+              work together, you're not just getting a developer or a designer, you're getting
               a <span className="text-blue">strategic partner</span> who takes
               time to understand your business, your customers, and your goals.
             </p>

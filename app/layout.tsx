@@ -3,6 +3,7 @@ import { Erica_One, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import InvertCursor from "@/components/InvertCursor";
+import Footer from "@/components/Footer";
 
 const ericaOne = Erica_One({
   weight: "400",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <InvertCursor />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
