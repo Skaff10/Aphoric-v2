@@ -1,9 +1,7 @@
 import PixelImage from "@/components/PixelImage";
 import ScrollWordReveal from "@/components/ScrollWordReveal";
-import WorkGrid from "@/components/WorkGrid";
+
 import Link from "next/link";
-import React from "react";
-import Image from "next/image";
 
 const page = () => {
   const selected_project = [
@@ -24,20 +22,20 @@ const page = () => {
   ];
 
   return (
-    <main className="w-full flex flex-col items-center ">
-      <section>
-        <h1 className="text-[500px] overflow-hidden font-display leading-none">
+    <main className="w-full flex flex-col items-center px-4 sm:px-6">
+      <section className="w-full flex flex-col items-center">
+        <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[clamp(46px,23.56vw,510px)] overflow-hidden font-display leading-none text-center">
           aphoric
         </h1>
-        <div className="w-full flex justify-end mt-5">
-          <p className="font-sans text-text text-3xl  max-w-2xl ">
-            we create websites & design strategic brand identities that win
+        <div className="w-full flex justify-center lg:justify-end mt-5 lg2:pr-52 ">
+          <p className="font-sans text-text text-xl sm:text-2xl lg:text-3xl max-w-2xl text-center lg:text-right ">
+            we create websites & design strategic brand identities that win
             trust, attract customers, and drive growth.
           </p>
         </div>
       </section>
-      <section className="mt-20">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6 max-w-510">
+      <section className="mt-[clamp(48px,4.17vw,80px)] w-full max-w-510">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-6">
           {selected_project.map((project, i) => (
             <Link key={project.slug} href={`/work/${project.slug}`}>
               <div className="overflow-hidden rounded-xl">
@@ -59,34 +57,40 @@ const page = () => {
           ))}
         </div>
       </section>
-      <section className="mt-30">
+      <section className="mt-[clamp(72px,6.25vw,120px)] w-full max-w-510">
         <ScrollWordReveal
           as="h2"
-          text="we are aphoric, a creative agency based in dhaka. we work with small business owners and startup founders who want  brand identity that positions them as the premium choice in their market"
-          className="text-3xl md:text-7xl font-semibold leading-snug max-w-510 mb-40"
+          text="we are aphoric, a creative agency based in dhaka. we work with small business owners and startup founders who want brand identity that positions them as the premium choice in their market"
+          className="text-xl sm:text-xl md:text-[clamp(43px,3.75vw,72px)] font-semibold leading-snug mb-[clamp(96px,8.33vw,160px)]"
           brightColor="#"
           dimColor="#38383d"
         />
       </section>
 
-      <section className="mt-30 w-full ">
-        <div className="flex justify-start w-full gap-10  md:pl-62 mb-40">
-          <div className="w-100 rounded-xl overflow-hidden">
-           <img src="/logo/aph-logo-w.svg" alt="aphoric" />
+      <section className="mt-[clamp(72px,6.25vw,120px)] w-full">
+        <div className="flex flex-col lg:flex-row justify-start w-full gap-6 lg:gap-[clamp(24px,2.08vw,40px)] pl-0 md:pl-8 lg:pl-[clamp(24px,9.08vw,230px)] mb-[clamp(96px,8.33vw,160px)] items-center lg:items-start">
+          <div className="w-50 sm:w-48 md:w-64 lg:w-[clamp(240px,20.83vw,400px)] shrink-0 rounded-xl overflow-hidden">
+            <img src="/logo/aph-logo-w.svg" alt="aphoric" className="w-full h-auto" />
           </div>
 
-          <div className="flex flex-col gap-4 justify-center items-start">
-            <span className="text-text text-xl  tracking-wide">
+          <div className="flex flex-col gap-4 justify-center items-center lg:items-start text-center  lg:text-left">
+            <span className="text-text text-lg sm:text-xl tracking-wide">
               why work with us
             </span>
-            <p className="text-2xl md:text-4xl  max-w-300 leading-snug  text-secondary">
+            <p className="text-lg sm:text-2xl lg:text-[clamp(22px,1.88vw,36px)] max-w-full lg:max-w-[clamp(720px,62.5vw,1200px)] leading-snug text-secondary">
               we believe the best brands come from{" "}
               <span className="text-blue-600">true collaboration</span>. when we
-              work together, you're not just getting a developer or a designer, you're getting
-              a <span className="text-blue">strategic partner</span> who takes
+              work together, you're not just getting a developer or a designer,
+              you're getting a{" "}
+              <span className="text-blue">strategic partner</span> who takes
               time to understand your business, your customers, and your goals.
             </p>
-            <Link href={'/contact'}  className="bg-secondary font-semibold text-primary p-4 rounded-lg px-10 mt-8">start a project</Link>
+            <Link
+              href={"/contact"}
+              className="inline-flex items-center justify-center bg-secondary font-semibold text-primary min-h-11 min-w-11 rounded-lg px-6 lg:px-[clamp(24px,2.08vw,40px)] mt-[clamp(19px,1.67vw,32px)]"
+            >
+              start a project
+            </Link>
           </div>
         </div>
       </section>

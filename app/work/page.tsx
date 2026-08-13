@@ -73,7 +73,6 @@ const page = () => {
     "automation",
   ];
 
- 
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filtered_project =
@@ -84,29 +83,29 @@ const page = () => {
         );
 
   return (
-    <main className="w-full flex flex-col items-center">
-      <section>
-        <h1 className="text-[260px] overflow-hidden font-display leading-none">
+    <main className="w-full flex flex-col items-center px-4 sm:px-6">
+      <section className="w-full flex justify-center">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[clamp(156px,13.54vw,260px)] overflow-hidden font-display leading-none text-center">
           selected work
         </h1>
       </section>
-      <section className="w-full flex gap-10 mt-7 justify-center text-6xl">
+      <section className="w-full flex flex-wrap gap-3 sm:gap-6 lg:gap-[clamp(24px,2.08vw,40px)] mt-7 justify-center text-lg sm:text-2xl md:text-3xl lg:text-[clamp(36px,3.13vw,60px)] px-2">
         {categoryOrder.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={
+            className={`min-h-[44px] min-w-[44px] flex items-center justify-center px-3 py-1 transition-colors cursor-pointer ${
               activeCategory === cat
                 ? "text-secondary font-semibold "
-                : "text-text "
-            }
+                : "text-text hover:text-secondary"
+            }`}
           >
             {cat}
           </button>
         ))}
       </section>
-      <section className="mt-15 mb-40">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-w-510">
+      <section className="w-full max-w-510 mt-[clamp(36px,3.13vw,60px)] mb-[clamp(96px,8.33vw,160px)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {filtered_project.map((project, i) => (
             <Link key={project.slug} href={`/work/${project.slug}`}>
               <div className="overflow-hidden rounded-xl">

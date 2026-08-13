@@ -47,7 +47,7 @@ export const projects: Project[] = [
     ],
     video: [
       "/project_images/ovenout/website_live.mp4",
-      "/[project_images/ovenout/combo.mp4",
+      "/project_images/ovenout/combo.mp4",
     ],
   },
   {

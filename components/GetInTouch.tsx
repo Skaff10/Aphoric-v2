@@ -2,10 +2,7 @@
 import { useEffect, useState } from "react";
 
 // Swap these for your own asset paths / imports
-const IMAGES: string[] = [
-  "/logo/aph-logo-bl.svg",
-  "/logo/aph-logo-w.svg",
-];
+const IMAGES: string[] = ["/logo/aph-logo-bl.svg", "/logo/aph-logo-w.svg"];
 
 const INTERVAL_MS = 1000;
 
@@ -20,12 +17,12 @@ export default function GetInTouch() {
   }, []);
 
   return (
-    <section className="flex items-center justify-center gap-4  py-10 sm:gap-6 md:gap-26 mb-30">
-      <span className=" font-extrabold leading-none tracking-tight text-secondary text-6xl sm:text-7xl md:text-8xl lg:text-[260px]">
+    <section className="flex flex-col md:flex-row items-center justify-center gap-7 sm:gap-6 md:gap-[clamp(62px,5.42vw,104px)] mb-5 md:mb-[clamp(72px,6.25vw,120px)] px-4">
+      <span className="font-extrabold leading-none tracking-tight text-secondary text-7xl sm:text-6xl md:text-7xl lg:text-[clamp(100px,8.54vw,260px)]">
         get in
       </span>
 
-      <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-60 lg:w-60">
+      <div className="relative h-40 w-40 sm:h-24 sm:w-24 md:h-40 md:w-40 lg:h-[clamp(144px,12.5vw,240px)] lg:w-[clamp(144px,12.5vw,240px)] overflow-hidden rounded-lg sm:rounded-xl">
         {IMAGES.map((src, i) => (
           <img
             key={src}
@@ -37,7 +34,7 @@ export default function GetInTouch() {
         ))}
       </div>
 
-      <span className="font-extrabold leading-none tracking-tight text-secondary text-6xl sm:text-7xl md:text-8xl lg:text-[260px]">
+      <span className="font-extrabold leading-none tracking-tight text-secondary text-7xl sm:text-6xl md:text-7xl lg:text-[clamp(100px,8.54vw,260px)]">
         touch
       </span>
     </section>

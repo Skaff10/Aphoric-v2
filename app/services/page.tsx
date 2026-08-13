@@ -284,42 +284,42 @@ const page = () => {
       : servicesData.filter((c) => c.id === activeCategory);
 
   return (
-    <div className="w-full flex flex-col items-center">
-      <section>
-        <h1 className="text-[460px] overflow-hidden font-display leading-none">
+    <div className="w-full flex flex-col items-center px-4 sm:px-6">
+      <section className="w-full flex flex-col items-center">
+        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[clamp(46px,21vw,460px)] overflow-hidden font-display leading-none text-center">
           services
         </h1>
-        <div className="w-full flex justify-end mt-5">
-          <p className="font-sans text-text text-3xl max-w-[630] ">
+        <div className="w-full flex justify-center lg:justify-end mt-5 lg2:pr-53">
+          <p className="font-sans text-text text-xl sm:text-2xl lg:text-3xl max-w-full lg:max-w-[clamp(378px,32.81vw,630px)] text-center lg:text-right">
             we also build custom packages around what you actually need.
           </p>
         </div>
       </section>
-      <section className="w-full flex gap-10 mt-30 justify-center text-6xl">
+      <section className="w-full flex flex-wrap gap-3 sm:gap-6 lg:gap-[clamp(24px,2.08vw,40px)] mt-[clamp(72px,6.25vw,120px)] justify-center text-lg sm:text-2xl md:text-3xl lg:text-[clamp(36px,3.13vw,60px)] px-2">
         {categoryOrder.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={
+            className={`min-h-11 min-w-11 flex items-center justify-center px-3 py-1 transition-colors cursor-pointer ${
               activeCategory === cat
                 ? "text-secondary font-semibold "
-                : "text-text "
-            }
+                : "text-text hover:text-secondary"
+            }`}
           >
             {cat}
           </button>
         ))}
       </section>
-      <section className="w-full flex flex-col items-center gap-24 mt-10 px-6 md:px-16 mb-40">
+      <section className="w-full max-w-510 flex flex-col items-center gap-[clamp(58px,5vw,96px)] mt-10 px-0 sm:px-6 md:px-16 mb-[clamp(96px,8.33vw,160px)]">
         {visibleCategories.map((category) => (
-          <div key={category.id} className="min-w-510 flex flex-col gap-8">
+          <div key={category.id} className="w-full flex flex-col gap-8">
             <div className="flex items-baseline justify-between border-b border-text/20 pb-4">
-              <h2 className="font-display text-4xl md:text-5xl text-secondary lowercase">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-secondary lowercase">
                 {category.label}
               </h2>
             </div>
 
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
               {category.tiers.map((tier) => (
                 <div
                   key={tier.name}
@@ -350,7 +350,7 @@ const page = () => {
                     ))}
                   </ul>
 
-                  <button className="mt-auto font-sans text-sm text-text border border-text/30 rounded-full px-5 py-2 hover:bg-text hover:text-white transition-colors self-start">
+                  <button className="mt-auto min-h-[44px] min-w-[44px] font-sans text-sm text-text border border-text/30 rounded-full px-5 py-2 hover:bg-text hover:text-white transition-colors self-start cursor-pointer flex items-center justify-center">
                     get a quote
                   </button>
                 </div>

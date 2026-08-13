@@ -4,7 +4,7 @@
   --color-secondary: #ece8df;
   --color-primary: #141414;
   --color-text: #aca9a3;
-
+  --breakpoint-lg2: 2000px;
   --font-display: var(--font-erica-one), cursive;
   --font-sans: var(--font-poppins), sans-serif;
 }
