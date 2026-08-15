@@ -110,7 +110,7 @@ export default function TerraJunePage() {
             height={900}
             startPixelSize={56}
             duration={2400}
-            className="w-full h-auto object-cover aspect-16/9"
+            className="w-full h-auto object-cover aspect-video"
           />
         </div>
       </section>

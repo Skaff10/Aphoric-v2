@@ -350,7 +350,7 @@ const page = () => {
                     ))}
                   </ul>
 
-                  <button className="mt-auto min-h-[44px] min-w-[44px] font-sans text-sm text-text border border-text/30 rounded-full px-5 py-2 hover:bg-text hover:text-white transition-colors self-start cursor-pointer flex items-center justify-center">
+                  <button className="mt-auto min-h-11 min-w-11 font-sans text-sm text-text border border-text/30 rounded-full px-5 py-2 hover:bg-text hover:text-white transition-colors self-start cursor-pointer flex items-center justify-center">
                     get a quote
                   </button>
                 </div>

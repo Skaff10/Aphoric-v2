@@ -53,7 +53,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
-          className="min-h-11 min-w-[44px] p-2 flex flex-col justify-center items-center gap-1.5 focus:outline-none cursor-pointer"
+          className="min-h-11 min-w-11 p-2 flex flex-col justify-center items-center gap-1.5 focus:outline-none cursor-pointer"
         >
           <span
             className={`w-6 h-0.5 bg-secondary transition-transform duration-300 ${
