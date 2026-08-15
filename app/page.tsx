@@ -1,6 +1,7 @@
 import PixelImage from "@/components/PixelImage";
 import ScrollWordReveal from "@/components/ScrollWordReveal";
 
+import Image from "next/image";
 import Link from "next/link";
 
 const page = () => {
@@ -70,7 +71,7 @@ const page = () => {
       <section className="mt-[clamp(72px,6.25vw,120px)] w-full">
         <div className="flex flex-col lg:flex-row justify-start w-full gap-6 lg:gap-[clamp(24px,2.08vw,40px)] pl-0 md:pl-8 lg:pl-[clamp(24px,9.08vw,230px)] mb-[clamp(96px,8.33vw,160px)] items-center lg:items-start">
           <div className="w-50 sm:w-48 md:w-64 lg:w-[clamp(240px,20.83vw,400px)] shrink-0 rounded-xl overflow-hidden">
-            <img src="/logo/aph-logo-w.svg" alt="aphoric" className="w-full h-auto" />
+            <Image src="/logo/aph-logo-w.svg" alt="aphoric" width={0} height={0} sizes="100vw" className="w-full h-auto" />
           </div>
 
           <div className="flex flex-col gap-4 justify-center items-center lg:items-start text-center  lg:text-left">

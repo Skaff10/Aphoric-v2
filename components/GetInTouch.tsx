@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 // Swap these for your own asset paths / imports
 const IMAGES: string[] = ["/logo/aph-logo-bl.svg", "/logo/aph-logo-w.svg"];
@@ -24,10 +25,11 @@ export default function GetInTouch() {
 
       <div className="relative h-40 w-40 sm:h-24 sm:w-24 md:h-40 md:w-40 lg:h-[clamp(144px,12.5vw,240px)] lg:w-[clamp(144px,12.5vw,240px)] overflow-hidden rounded-lg sm:rounded-xl">
         {IMAGES.map((src, i) => (
-          <img
+          <Image
             key={src}
             src={src}
             alt=""
+            fill
             className="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ease-in-out"
             style={{ opacity: i === index ? 1 : 0 }}
           />

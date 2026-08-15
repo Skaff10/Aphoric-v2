@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { LuExpand, LuX, LuChevronLeft, LuChevronRight, LuPlay } from "react-icons/lu";
 
 interface ProjectGalleryProps {
@@ -96,11 +97,13 @@ export default function ProjectGallery({
                   className="group relative rounded-2xl overflow-hidden border border-text/15 bg-primary/30 cursor-pointer transition-all duration-300 hover:border-text/40 shadow-lg w-full"
                 >
                   <div className="relative w-full overflow-hidden bg-[#101010]">
-                    <img
+                    <Image
                       src={imgSrc}
                       alt={`${title} showcase ${idx + 1}`}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
                       className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.01]"
-                      loading="lazy"
                     />
                   </div>
 
@@ -137,10 +140,13 @@ export default function ProjectGallery({
 
           {/* Main Image View */}
           <div className="relative w-full max-w-7xl flex-1 flex items-center justify-center my-4 overflow-auto">
-            <img
+            <Image
               src={galleryImages[lightboxIndex]}
               alt={`${title} full view`}
-              className="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="max-h-[85vh] max-w-full w-auto h-auto object-contain rounded-lg shadow-2xl"
             />
           </div>
 
