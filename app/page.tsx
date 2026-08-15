@@ -11,14 +11,14 @@ const page = () => {
       title: "Down 2 Detail",
       tag: "auto detailing · web platform",
 
-      cover: "/project_images/d2d/d2d-aph.png",
+      cover: "/project_images/d2d/d2d-aph.webp",
     },
     {
       slug: "ovenout",
       title: "Oven & Out",
       tag: "food ordering · brand · social",
       category: ["website", "design", "marketing"],
-      cover: "/project_images/ovenout/ovn-aph.png",
+      cover: "/project_images/ovenout/ovn-aph.webp",
     },
   ];
 

@@ -15,10 +15,10 @@ export default function TypefacePage() {
     slug: "typeface",
     title: "TypeFace",
     tag: "brand identity",
-    cover: "/project_images/typeface/typeface_cover.png",
+    cover: "/project_images/typeface/typeface_cover.webp",
     images: [
-      "/project_images/typeface/typeface_cover.png",
-      "/project_images/typeface/typeface_brandguide.png",
+      "/project_images/typeface/typeface_cover.webp",
+      "/project_images/typeface/typeface_brandguide.webp",
     ],
   };
 

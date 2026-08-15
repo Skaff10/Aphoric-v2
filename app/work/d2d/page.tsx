@@ -15,12 +15,12 @@ export default function D2DPage() {
     slug: "d2d",
     title: "Down 2 Detail",
     tag: "auto detailing · web platform",
-    cover: "/project_images/d2d/d2d-aph.png",
+    cover: "/project_images/d2d/d2d-aph.webp",
     images: [
-      "/project_images/d2d/d2d-aph.png",
-      "/project_images/d2d/one.png",
-      "/project_images/d2d/two.png",
-      "/project_images/d2d/three.png",
+      "/project_images/d2d/d2d-aph.webp",
+      "/project_images/d2d/one.webp",
+      "/project_images/d2d/two.webp",
+      "/project_images/d2d/three.webp",
     ],
   };
 

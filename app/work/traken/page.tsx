@@ -15,11 +15,11 @@ export default function TrakenPage() {
     slug: "traken",
     title: "Traken",
     tag: "web platform",
-    cover: "/project_images/traken/traken-aph.png",
+    cover: "/project_images/traken/traken-aph.webp",
     images: [
-      "/project_images/traken/traken-aph.png",
-      "/project_images/traken/one.png",
-      "/project_images/traken/two.png",
+      "/project_images/traken/traken-aph.webp",
+      "/project_images/traken/one.webp",
+      "/project_images/traken/two.webp",
     ],
   };
 

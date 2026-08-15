@@ -15,10 +15,10 @@ export default function TerraJunePage() {
     slug: "tj",
     title: "Terra & June",
     tag: "brand identity",
-    cover: "/project_images/tj/tj_cover.png",
+    cover: "/project_images/tj/tj_cover.webp",
     images: [
-      "/project_images/tj/tj_cover.png",
-      "/project_images/tj/tj_brandguide.png",
+      "/project_images/tj/tj_cover.webp",
+      "/project_images/tj/tj_brandguide.webp",
     ],
   };
 

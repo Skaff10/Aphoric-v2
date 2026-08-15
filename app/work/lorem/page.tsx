@@ -15,10 +15,10 @@ export default function LoremPage() {
     slug: "lorem",
     title: "Lorem",
     tag: "brand identity",
-    cover: "/project_images/lorem/lorem_cover.png",
+    cover: "/project_images/lorem/lorem_cover.webp",
     images: [
-      "/project_images/lorem/lorem_cover.png",
-      "/project_images/lorem/lorem_brandguide.png",
+      "/project_images/lorem/lorem_cover.webp",
+      "/project_images/lorem/lorem_brandguide.webp",
     ],
   };
 

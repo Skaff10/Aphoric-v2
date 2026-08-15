@@ -15,10 +15,10 @@ export default function MeridethPage() {
     slug: "merideth",
     title: "Merideth",
     tag: "brand identity",
-    cover: "/project_images/merideth/merideth_cover.png",
+    cover: "/project_images/merideth/merideth_cover.webp",
     images: [
-      "/project_images/merideth/merideth_cover.png",
-      "/project_images/merideth/merideth_brandguide.png",
+      "/project_images/merideth/merideth_cover.webp",
+      "/project_images/merideth/merideth_brandguide.webp",
     ],
   };
 

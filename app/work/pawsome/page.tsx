@@ -15,11 +15,11 @@ export default function PawsomePage() {
     slug: "pawsome",
     title: "Pawsome",
     tag: "web platform",
-    cover: "/project_images/pawsome/pawsome-aph.png",
+    cover: "/project_images/pawsome/pawsome-aph.webp",
     images: [
-      "/project_images/pawsome/pawsome-aph.png",
-      "/project_images/pawsome/one.png",
-      "/project_images/pawsome/two.png",
+      "/project_images/pawsome/pawsome-aph.webp",
+      "/project_images/pawsome/one.webp",
+      "/project_images/pawsome/two.webp",
     ],
   };
 
